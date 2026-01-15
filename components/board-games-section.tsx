@@ -6,7 +6,7 @@ const boardGames = [
     title: "Arrywal",
     subtitle: "Solo or 3-player cooperative RPG with class-based combat",
     year: "2020",
-    image: "/arrywal.jpg",
+    image: "arrywal.jpg",
     roles: ["Co-Designer", "Systems Design", "Balancing", "Playtesting", "Documentation"],
     details: `A turn-based cooperative RPG board game where players explore a rich fantasy world, complete main and side quests, and face dynamic encounters including dungeons and bosses. Players choose from distinct classes (Berserker, Thief, Wizard) with unique weapons, skills, and progression, customizing gear, crafting items, and managing resources.
 
@@ -18,7 +18,7 @@ Arrywal showcases comprehensive game design skills: narrative world-building, me
     title: "Arrywal PvP",
     subtitle: "Competitive 3-player game with asymmetric classes and card combat",
     year: "2021",
-    image: "/arrywal-pvp.jpg",
+    image: "arrywal-pvp.jpg",
     roles: ["Co-Designer", "Systems Design", "Balancing", "Playtesting", "Documentation"],
     details: `A 3-player competitive board game where players race to retrieve a powerful star and return it to their camp while fighting rival players, defeating PvE bosses, and navigating escalating world threats. Players choose from six asymmetric classes with unique stats, weapons, passives, and movement abilities, creating strong build variety and counterplay.
 
@@ -30,7 +30,7 @@ Arrywal PvP showcases deep systems design, asymmetry, emergent gameplay, and hig
     title: "Arrywal PvPvE",
     subtitle: "Quest-driven progression with PvE bosses and competitive PvP",
     year: "2022",
-    image: "/arrywal-pvpve.jpg",
+    image: "arrywal-pvpve.jpg",
     roles: ["Co-Designer", "Systems Design", "Balancing", "Playtesting", "Iteration"],
     details: `A progression-focused Arrywal variant that blends PvE quests and bosses with the same asymmetric PvP combat system as Arrywal PvP. Players choose spawn points on the edges of a hexagonal map, complete quests, defeat central bosses, and clash with rivals while advancing inward.
 
@@ -40,7 +40,7 @@ The main objective is to reach the center, claim the primary reward, and return 
     title: "Goblin Village",
     subtitle: "3-player competitive resource management and village building",
     year: "2024",
-    image: "/goblin-village.jpg",
+    image: "goblin-village.jpg",
     roles: ["Co-Designer", "Systems Design", "Economy Design", "Balancing", "Playtesting"],
     details: `Goblin Village is a 3-player competitive board game where players manage and expand goblin villages through structured turn phases. Each turn consists of gathering resources, constructing and upgrading buildings, and taking aggressive or defensive actions against opponents.
 
@@ -50,7 +50,7 @@ Players must manage food upkeep, optimize asymmetric character perks, and choose
     title: "Untitled Post-Apocalyptic Game",
     subtitle: "1-5 player cooperative tactical game with grid-based combat",
     year: "2021",
-    image: "/post-apocalyptic-tactical-board-game-miniatures-gr.jpg",
+    image: "post-apocalyptic-tactical-board-game-miniatures-gr.jpg",
     roles: ["Co-Designer", "Systems Design", "Combat Design", "Balancing", "Playtesting"],
     details: `A turn-based tactical board game where players control a squad of specialized characters and progress through hostile zones filled with mutated creatures, human enemies, and dynamic combat scenarios.
 
