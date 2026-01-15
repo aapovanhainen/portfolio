@@ -66,7 +66,7 @@ export function AboutSection() {
 
         <div className="w-full md:w-72 shrink-0">
           <div className="aspect-square rounded-lg bg-card border border-border overflow-hidden">
-            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/profile.jpg`} alt="Profile photo" className="w-full h-full object-cover" />
+<img src="/portfolio/profile.jpg" alt="Profile photo" className="w-full h-full object-cover" />
 
           </div>
 
