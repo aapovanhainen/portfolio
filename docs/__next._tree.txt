@@ -5,12 +5,12 @@
 :HL["/portfolio/profile.jpg","image"]
 :HL["/portfolio/exsanguination.jpg","image"]
 :HL["arrywal.jpg","image"]
-:HL["/versebound.jpg","image"]
-:HL["/incursion.png","image"]
-:HL["/lehtipuhallin.png","image"]
-:HL["/pukeko.png","image"]
+:HL["/portfolio/versebound.jpg","image"]
+:HL["/portfolio/incursion.png","image"]
+:HL["/portfolio/lehtipuhallin.png","image"]
+:HL["/portfolio/pukeko.png","image"]
 :HL["arrywal-pvp.jpg","image"]
 :HL["arrywal-pvpve.jpg","image"]
 :HL["goblin-village.jpg","image"]
 :HL["post-apocalyptic-tactical-board-game-miniatures-gr.jpg","image"]
-0:{"buildId":"LnxHcxfhpfNmTK1CdOv5O","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"tAguWzGPMgBp7nHFU5EhE","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

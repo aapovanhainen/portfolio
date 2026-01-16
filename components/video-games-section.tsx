@@ -7,7 +7,7 @@ const videoGames = [
     subtitle: "Fast-paced first-person melee action game",
     year: "2024",
     studio: "Never Late Production",
-    image: <img src="/portfolio/exsanguination.jpg" alt="Exsanguination" className="w-full h-auto" />,
+    image: "/portfolio/exsanguination.jpg",
     roles: [
       "Producer",
       "Game Design",
@@ -53,7 +53,7 @@ My contributions:
     subtitle: "2D action roguelike inspired by Kalevala folklore",
     year: "2025",
     studio: "Conifer Digital",
-    image: "/versebound.jpg",
+    image: "/portfolio/versebound.jpg",
     roles: ["Programming", "QA", "Audio Production", "Audio Editing", "Implementation", "Balance", "Marketing"],
     links: [
       { label: "Steam Page", url: "https://store.steampowered.com/app/2672520/Versebound/", type: "steam" as const },
@@ -78,7 +78,7 @@ My contributions (Internship: Jan–Apr 2025, ~460 hours):
     subtitle: "First-person horror puzzle game (Game Jam)",
     year: "2024",
     studio: "Game Jam Project",
-    image: "/incursion.png",
+    image: "/portfolio/incursion.png",
     roles: ["Design", "Level Design", "Enemy AI", "Implementation"],
     details: `Incursion is a first-person horror puzzle game developed during a self-directed two-day game jam in Unity with one collaborator. The player must defeat or evade three enemies using the correct tools, with enemy weaknesses, detection methods, and potion effects randomized each run, forcing observation and experimentation rather than memorization.
 
@@ -92,7 +92,7 @@ My contributions:
     subtitle: "Comedic 3D game where you clean Hell with a leaf blower",
     year: "2025",
     studio: "Game Jam Project",
-    image: "/lehtipuhallin.png",
+    image: "/portfolio/lehtipuhallin.png",
     roles: ["Design", "Level Design", "Enemy AI", "Ragdoll System", "Implementation"],
     details: `Lehtipuhallinmies Helvetissä is a comedic first-person 3D game developed during a self-directed two-day game jam by a two-person core team. The player cleans Hell by blowing large amounts of leaves into lava while avoiding demons that patrol, chase, and search the level. As leaves are cleared, the player unlocks increasingly powerful abilities that enhance movement and the leaf blower.
 
@@ -108,7 +108,7 @@ My contributions:
     subtitle: "Solar-punk mobile game with turn-based combat (In Development)",
     year: "Unreleased",
     studio: "Gangster Pūkeko Games",
-    image: "/pukeko.png",
+    image: "/portfolio/pukeko.png",
     roles: ["Audio Design", "Audio & Systems Integration", "FMOD", "Programming", "Implementation"],
     links: [{ label: "Studio Website", url: "https://www.gangsterpukeko.com", type: "website" as const }],
     details: `Neverance is an in-development indie mobile game centered around grid-based exploration where players uncover items and enemies in patterned sequences, balancing risk and reward before transitioning into turn-based combat encounters. Narrative progression is delivered through story-driven dialogue sequences integrated directly into gameplay.
