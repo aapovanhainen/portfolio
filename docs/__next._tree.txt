@@ -13,4 +13,4 @@
 :HL["arrywal-pvpve.jpg","image"]
 :HL["goblin-village.jpg","image"]
 :HL["post-apocalyptic-tactical-board-game-miniatures-gr.jpg","image"]
-0:{"buildId":"tAguWzGPMgBp7nHFU5EhE","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"fXynVesuOSGVG9UuIKpIe","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

@@ -30,7 +30,7 @@ const videoGames = [
         type: "steam" as const,
       },
       {
-        label: "Practical Training Report (with GDD)",
+        label: "Practical Training Report",
         url: "https://blobs.vusercontent.net/blob/Ab0136_TC_Portfolio_pdf-K9zj1g5X2K9X0hn2Ht49WSwVubYJGB.pdf",
         type: "pdf" as const,
       },
