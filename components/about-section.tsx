@@ -41,7 +41,7 @@ export function AboutSection() {
               audio systems for <span className="text-primary font-medium">Neverance</span>.
             </p>
             <p>
-              ▸ My education at <span className="text-primary font-medium">JAMK</span> covered game programming, Unity, Unreal Engine, software engineering, audio production, digital media, UX and usability, AI, cross-reality technologies, QA, Balance, mobile and online game development, content creation,  and professional skills, including entrepreneurship, project management, business, team collaboration, self-leadership.
+              ▸ My education at <span className="text-primary font-medium">JAMK</span> covered game programming, Unity, Unreal Engine, software engineering, audio production, digital media, UX and usability, AI, cross-reality technologies, QA, balance, mobile and online game development, content creation,  and professional skills, including entrepreneurship, project management, business, team collaboration, self-leadership.
               </p>
               <p>
               ▸ My Bachelor's thesis explored Foley sound production workflows for indie studios.
