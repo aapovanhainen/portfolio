@@ -7,7 +7,11 @@ const videoGames = [
     subtitle: "Fast-paced first-person melee action game",
     year: "2024",
     studio: "Never Late Production",
-    image: "/exsanguination.jpg",
+    image: <img
+  src="/portfolio/exsanguination.jpg"
+  alt="'Exsanguination'"
+  className="w-full h-full object-cover"
+/>,
     roles: [
       "Producer",
       "Game Design",
