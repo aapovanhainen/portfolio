@@ -65,7 +65,7 @@ export function CodeSnippetCard({ item }: { item: CodeItem }) {
             <pre className="max-h-[420px] overflow-auto rounded-lg border bg-muted/40 p-4 text-xs leading-relaxed">
               <code>{item.code}</code>
             </pre>
-            
+
             {item.pdf && (
   <div className="mt-4 flex justify-end">
     <Button asChild variant="outline" size="sm">
@@ -77,9 +77,7 @@ export function CodeSnippetCard({ item }: { item: CodeItem }) {
 )}
 
 
-            <p className="mt-3 text-xs text-muted-foreground">
-              Tip: keep code excerpts focused. Link to full repo/commit if available.
-            </p>
+            
           </CardContent>
         </CollapsibleContent>
       </Collapsible>

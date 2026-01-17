@@ -646,7 +646,7 @@ public class EnemyAI : MonoBehaviour
 `,
 pdf: {
     url: "/portfolio/a-star-documentation.pdf",
-    label: "Technical Report (PDF)",
+    label: "Workflow Report (PDF)",
   },
 }  
 ]

@@ -27,11 +27,7 @@ export function AboutSection() {
             <h1 className="text-4xl font-bold text-foreground mb-2">About Me</h1>
             <p className="text-muted-foreground">Game Designer • Audio Designer • Unity Developer</p>
           </div>
-<img
-  src="/portfolio/profile.jpg"
-  alt="Profile photo"
-  className="w-full h-full object-cover"
-/>
+
           <div className="space-y-4 text-foreground/90 leading-relaxed">
             <p>
               ▸ Hey! I'm a game developer with a passion for crafting systems and games that feel good to play. I specialize in design, audio, implementation and programming, but I'm comfortable and curious across every stage of game development. I have primarily worked with Unity, with some experience using Unreal Engine.
@@ -70,7 +66,11 @@ export function AboutSection() {
 
         <div className="w-full md:w-72 shrink-0">
           <div className="aspect-square rounded-lg bg-card border border-border overflow-hidden">
-
+<img
+  src="/portfolio/profile.jpg"
+  alt="Profile photo"
+  className="w-full h-full object-cover"
+/>
 
           </div>
 

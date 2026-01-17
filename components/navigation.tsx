@@ -5,11 +5,10 @@ import { useState, useEffect } from "react"
 const navItems = [
   { label: "About", href: "#about" },
   { label: "Education", href: "#education" },
-  { label: "Video Games", href: "#video-games" },
-  { label: "Board Games", href: "#board-games" },
   { label: "Code", href: "#code" },
 { label: "Audio", href: "#audio" },
-
+  { label: "Video Games", href: "#video-games" },
+  { label: "Board Games", href: "#board-games" },
 ]
 
 export function Navigation() {
