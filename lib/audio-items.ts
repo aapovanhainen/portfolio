@@ -1,7 +1,13 @@
 export type AudioItem = {
+  id: string
+  title: string
+  subtitle: string
+  tags?: string[]
+  code: string
+
 // ogg tai wav tyyppi
-  
 }
+
 
 
 export const codeItems: AudioItem[] = [
@@ -14,5 +20,6 @@ export const codeItems: AudioItem[] = [
     title: "Work in progress",
     subtitle: "Work in progress",
     tags: ["Reaper", "Audio", "Unity"],
+    code:"",
   }
 ]
