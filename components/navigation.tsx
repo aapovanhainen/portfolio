@@ -7,6 +7,9 @@ const navItems = [
   { label: "Education", href: "#education" },
   { label: "Video Games", href: "#video-games" },
   { label: "Board Games", href: "#board-games" },
+  { label: "Code", href: "#code" },
+{ label: "Audio", href: "#audio" },
+
 ]
 
 export function Navigation() {

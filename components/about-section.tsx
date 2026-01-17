@@ -25,12 +25,16 @@ export function AboutSection() {
               Game Developer
             </Badge>
             <h1 className="text-4xl font-bold text-foreground mb-2">About Me</h1>
-            <p className="text-muted-foreground">Game Designer • Audio Designer • Unity/C# Developer</p>
+            <p className="text-muted-foreground">Game Designer • Audio Designer • Unity Developer</p>
           </div>
-
+<img
+  src="/portfolio/profile.jpg"
+  alt="Profile photo"
+  className="w-full h-full object-cover"
+/>
           <div className="space-y-4 text-foreground/90 leading-relaxed">
             <p>
-              ▸ Hey! I'm a game developer with a passion for crafting systems and games that feel good to play. My sweet spot is where design meets audio meets code, and bring it all together in Unity.
+              ▸ Hey! I'm a game developer with a passion for crafting systems and games that feel good to play. I specialize in design, audio, implementation and programming, but I'm comfortable and curious across every stage of game development. I have primarily worked with Unity, with some experience using Unreal Engine.
             </p>
             <p>
               ▸ I shipped <span className="text-primary font-medium">Exsanguination</span> on Steam as producer, designer, programmer 
@@ -41,10 +45,10 @@ export function AboutSection() {
               audio systems for <span className="text-primary font-medium">Neverance</span>.
             </p>
             <p>
-              ▸ My education at <span className="text-primary font-medium">JAMK</span> covered game programming, Unity, Unreal Engine, software engineering, audio production, digital media, UX and usability, AI, cross-reality technologies, QA, balance, mobile and online game development, content creation,  and professional skills, including entrepreneurship, project management, business, team collaboration, self-leadership.
+              ▸ My education at <span className="text-primary font-medium">JAMK</span> covered game programming, Unity, Unreal Engine, software engineering, audio production, digital media, UX and usability, AI, cross-reality technologies, QA, balance, mobile and online game development, content creation, and professional skills including entrepreneurship, project management, business, team collaboration and self-leadership.
               </p>
               <p>
-              ▸ My Bachelor's thesis explored Foley sound production workflows for indie studios.
+              ▸ My Bachelor's thesis explored Foley sound production workflows in indie games and produced analyzing tool to evaluate Foley sound feasibility.
               </p>
               <p>
               ▸ Years of designing
@@ -66,11 +70,7 @@ export function AboutSection() {
 
         <div className="w-full md:w-72 shrink-0">
           <div className="aspect-square rounded-lg bg-card border border-border overflow-hidden">
-<img
-  src="/portfolio/profile.jpg"
-  alt="Profile photo"
-  className="w-full h-full object-cover"
-/>
+
 
           </div>
 

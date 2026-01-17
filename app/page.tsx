@@ -1,5 +1,6 @@
 import { AboutSection } from "@/components/about-section"
 import { EducationSection } from "@/components/education-section"
+import { CodeSection } from "@/components/CodeSection"
 import { VideoGamesSection } from "@/components/video-games-section"
 import { BoardGamesSection } from "@/components/board-games-section"
 import { Navigation } from "@/components/navigation"
@@ -11,6 +12,7 @@ export default function Home() {
       <main className="max-w-5xl mx-auto px-6 py-12 space-y-20">
         <AboutSection />
         <EducationSection />
+        <CodeSection />
         <VideoGamesSection />
         <BoardGamesSection />
       </main>

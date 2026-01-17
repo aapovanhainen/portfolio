@@ -109,7 +109,7 @@ const courseCategories = [
         code: "HTGP0350",
         name: "AI in Games",
         description:
-          "Artificial intelligence techniques used in game development. Decision-making systems, behavior modeling, and gameplay-oriented AI solutions. Personal project: A* pathfinding system with state machine (idle, patrol, chase, combat, look around), line-of-sight verification, and sound-based investigation behaviors.",
+          "Artificial intelligence techniques used in game development. Decision-making systems, behavior modeling, and gameplay-oriented AI solutions. Personal project: A* pathfinding system with state machine (idle, patrol, investigate, combat), line-of-sight verification, and sound-based investigation behaviors.",
       },
       {
         code: "HTGP0330",
