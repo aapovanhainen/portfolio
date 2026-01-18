@@ -17,7 +17,6 @@ Arrywal showcases comprehensive game design skills: narrative world-building, me
   {
     title: "Arrywal: Constellation of Hope",
     subtitle: "Competitive 3-player game with asymmetric classes and card combat",
-    studio: "Sade Co",
     year: "2021",
     image: "arrywal-pvp.png",
     roles: ["Design", "Systems Design", "Balance", "QA", "Documentation"],
@@ -30,7 +29,6 @@ Arrywal PvP showcases deep systems design, asymmetry, emergent gameplay, and hig
   {
     title: "Arrywal (PvPvE)",
     subtitle: "1 to 3-player quest-driven progression with PvE bosses and competitive PvP",
-    studio: "Sade Co",
     year: "2022",
     image: "arrywal-pvpve.png",
     roles: ["Design", "Systems Design", "Balance", "QA"],
@@ -41,7 +39,6 @@ The main objective is to reach the center, claim the primary reward, and return 
   {
     title: "Goblin Village",
     subtitle: "3-player competitive resource management and village building",
-    studio: "Sade Co",
     year: "2024",
     image: "goblin-village.png",
     roles: ["Design", "Systems Design", "Economy Design", "Balance", "QA"],
@@ -52,7 +49,6 @@ Players must manage food upkeep, optimize asymmetric character perks, and choose
   {
     title: "Untitled Post-Apocalyptic Game",
     subtitle: "1 to 5 player cooperative tactical game with grid-based combat",
-    studio: "Sade Co",
     year: "2021",
     image: "post-apocalyptic-tactical-board-game-miniatures-gr.jpg",
     roles: ["Design", "Systems Design", "Combat Design", "Balance", "QA"],
@@ -73,7 +69,7 @@ export function BoardGamesSection() {
       </div>
 
       <p className="text-muted-foreground mb-8 max-w-3xl">
-        Personal passion projects co-created with a close collaborator under the name Sade Co, an informal and unregistered collective. 
+        Personal passion projects co-created with a close collaborator. 
         Each game has undergone extensive iteration cycles, systematic balancing passes, and numerous playtest sessions to refine mechanics and player experience. 
         These designs remain unpublished but represent deep exploration of tabletop game systems.
 

@@ -10,20 +10,21 @@ const videoGames = [
     workdescription: "Product Lab (Steam release): 675 hours",
     image: "/portfolio/exsanguination.jpg",
     roles: [
-      "Producer",
-      "Game Design",
-      "Audio Design",
-      "Audio Production",
-      "Foley Sound Production",
-      "Audio Editing",
-      "Programming",
-      "Combat System",
-      "Enemy AI",
-      "Level Design",
-      "Publishing",
-      "Implementation",
-      "Mentoring",
-    ],
+  "Producer",
+  "Publishing",
+  "Game Design",
+  "Level Design",
+  "Audio Design",
+  "Audio Production",
+  "Foley Sound Production",
+  "Audio Editing",
+  "Programming",
+  "Combat System",
+  "Enemy AI",
+  "Implementation",
+  "Mentoring",
+],
+
     links: [
       {
         label: "Steam Page (Link)",
@@ -41,13 +42,13 @@ const videoGames = [
 Culminating in a multi-phase boss fight, the game is designed as a short but intense experience where mastery of mechanics is rewarded through speed, efficiency, and execution.
 
 My contributions:
-• Design, audio, programming, production, and publishing
-• Player movement and combat systems with combo features
+• As Producer, coordinated task planning, adjusted scope under tight deadlines
+• Steam release, including the store page and build management in Steamworks,
 • Designed and implemented two enemy types
 • Recording and editing custom Foley & asset sound effects
 • Dynamic state-based transitions for music
-• As Producer, coordinated task planning, adjusted scope under tight deadlines, mentored a junior programmer
-• Steam release, including the store page and build management in Steamworks`,
+• Player movement and combat systems with combo features
+• Mentored a junior programmer`
   },
   {
     title: "Versebound",
@@ -56,7 +57,15 @@ My contributions:
     studio: "Conifer Digital",
     workdescription: "Practical Training: 463 hours",
     image: "/portfolio/versebound.jpg",
-    roles: ["Programming", "QA", "Audio Production", "Audio Editing", "Implementation", "Balance", "Marketing"],
+roles: [
+  "Balance",
+  "QA",
+  "Programming",
+  "Implementation",
+  "Audio Production",
+  "Audio Editing", 
+  "Marketing",
+],
     links: [
       { label: "Steam Page (Link)", url: "https://store.steampowered.com/app/2672520/Versebound/", type: "steam" as const },
       {
@@ -75,9 +84,9 @@ My contributions:
 My contributions:
 • Game balance: all weapons, passives, enemies, bosses, and progression through extensive playtesting and data-driven iteration
 • QA: Created playtest sessions including 20+ students with custom questionnaire
+• Bug fixes and usability improvements
 • Improved UI clarity by redesigning upgrade and stat texts
 • Designed, created and implemented sound effects, including a dynamic environmental audio system
-• Bug fixes and usability improvements
 • Supported influencer outreach and marketing preparation
 • Designed a structured playtesting questionnaire used for external testing`,
   },
@@ -85,10 +94,15 @@ My contributions:
     title: "Incursion",
     subtitle: "First-person horror puzzle game (Unity)",
     year: "2024",
-    studio: "Sade Co",
+    studio: "Personal project",
     workdescription: "Game Jam project: 2 days",
     image: "/portfolio/incursion.png",
-    roles: ["Design", "Level Design", "Enemy AI", "Implementation"],
+roles: [
+  "Design",
+  "Level Design",
+  "Enemy AI",
+  "Implementation",
+],
     details: `Incursion is a first-person horror puzzle game developed during a self-directed two-day game jam in Unity with one collaborator. The player must defeat and evade enemies using the correct tools, with enemy weaknesses, detection methods, and potion effects randomized each run, forcing observation and experimentation rather than memorization.
 
 My contributions:
@@ -100,10 +114,16 @@ My contributions:
     title: "Lehtipuhallinmies Helvetissä",
     subtitle: "First-person comedic action game (Unity)",
     year: "2025",
-    studio: "Sade Co",
+    studio: "Personal project",
     workdescription: "Game Jam project: 2 days",
     image: "/portfolio/lehtipuhallin.png",
-    roles: ["Design", "Level Design", "Enemy AI", "Programming", "Implementation"],
+roles: [
+  "Design",
+  "Level Design",
+  "Programming",
+  "Enemy AI",
+  "Implementation",
+],
     details: `Lehtipuhallinmies Helvetissä is a comedic first-person action game developed during a self-directed two-day game jam by a two-person core team and a support person for music. The player cleans Hell by blowing large amounts of leaves into lava while avoiding demons that patrol, chase, and search the level. As leaves are cleared, the player unlocks increasingly powerful abilities that enhance movement and the leaf blower.
 
 My contributions:
@@ -120,7 +140,13 @@ My contributions:
     studio: "Gangster Pūkeko Games",
     workdescription: "Practical Training: 351 hours",
     image: "/portfolio/pukeko.png",
-    roles: ["Audio Design", "Audio & Systems Integration", "FMOD", "Programming", "Implementation"],
+roles: [
+  "Audio Design",
+  "Audio & Systems Integration",
+  "FMOD",
+  "Programming",
+  "Implementation",
+],
     links: [{ label: "Gangster Pūkeko Games Website", url: "https://www.gangsterpukeko.com", type: "website" as const }],
     details: `Neverance is an in-development mobile game centered around grid-based exploration where players uncover items and enemies in patterned sequences, transitioning into turn-based combat encounters. Narrative progression is delivered through story-driven dialogue sequences integrated directly into gameplay.
 
@@ -140,7 +166,7 @@ export function VideoGamesSection() {
         <Gamepad2 className="w-6 h-6 text-primary" />
         <h2 className="text-2xl font-bold text-foreground">Video Games</h2>
         <p className="text-muted-foreground mb-8 max-w-3xl">
-  Commercial releases, professional training projects, and game jam titles developed in Unity. Includes shipped Steam games, industry collaborations, and smaller experimental projects created under the name Sade Co, an informal and unregistered collective.
+  Commercial releases, professional training projects, and game jam titles developed in Unity.
 </p>
       </div>
 
