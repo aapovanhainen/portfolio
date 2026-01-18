@@ -1,8 +1,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
-import { GraduationCap, BookOpen, FileText } from "lucide-react"
-import { ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { GraduationCap, BookOpen, FileText, ExternalLink } from "lucide-react"
 
 const courseCategories = [
   {
@@ -335,27 +334,31 @@ export function EducationSection() {
       </div>
 
       <p className="text-muted-foreground mb-8 max-w-3xl">
-        My degree combined hands-on game development with production, programming, game engines, software development, research, language and communication skills, business and to work effectively in multidisciplinary teams with real clients and deadlines.
+        My degree combined hands-on game development with production, programming, game engines, software development,
+        research, language and communication skills, business and to work effectively in multidisciplinary teams with real
+        clients and deadlines.
       </p>
 
-      <div className="bg-card border border-border rounded-lg p-6">
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
-  <div className="flex-1">
-    <h3 className="text-xl font-semibold text-foreground">Jyväskylä University of Applied Sciences</h3>
-    <p className="text-muted-foreground">Business Information Technology — Game Production</p>
-  </div>
+      {/* ONE card that contains BOTH School + Thesis */}
+      <div className="bg-card border border-border rounded-lg p-6 space-y-8">
+        {/* School header row */}
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div className="flex-1">
+            <h3 className="text-xl font-semibold text-foreground">Jyväskylä University of Applied Sciences</h3>
+            <p className="text-muted-foreground">Business Information Technology — Game Production</p>
+          </div>
 
-  <div className="flex flex-col gap-2 md:items-end">
-    <Badge variant="secondary" className="w-fit">
-      Graduated December 2025
-    </Badge>
-    <Badge variant="secondary" className="w-fit">
-      GPA 4.5 / 5
-    </Badge>
-  </div>
-</div>
+          <div className="flex flex-col gap-2 md:items-end">
+            <Badge variant="secondary" className="w-fit">
+              Graduated December 2025
+            </Badge>
+            <Badge variant="secondary" className="w-fit">
+              GPA 4.5 / 5
+            </Badge>
+          </div>
+        </div>
 
-
+        {/* Program details accordion */}
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="details" className="border-border">
             <AccordionTrigger className="text-sm text-muted-foreground hover:text-foreground">
@@ -427,64 +430,64 @@ export function EducationSection() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-      </div>
 
-      <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
-  <div className="flex flex-wrap items-center gap-3">
-    <BookOpen className="w-5 h-5 text-primary" />
-    <h3 className="text-lg font-semibold text-foreground">Bachelor's Thesis</h3>
+        {/* Thesis block INSIDE the same card */}
+        <div className="border-t border-border pt-6">
+          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+            {/* Left: title + link button */}
+            <div className="flex flex-wrap items-center gap-3">
+              <BookOpen className="w-5 h-5 text-primary" />
+              <h3 className="text-lg font-semibold text-foreground">Bachelor&apos;s Thesis</h3>
 
-    <Button variant="outline" size="sm" asChild className="text-xs bg-transparent">
-      <a
-        href="https://www.theseus.fi/handle/10024/908930"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <ExternalLink className="w-3 h-3 mr-1.5" />
-        Full Thesis (Link)
-      </a>
-    </Button>
-  </div>
+              <Button variant="outline" size="sm" asChild className="text-xs bg-transparent">
+                <a href="https://www.theseus.fi/handle/10024/908930" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="w-3 h-3 mr-1.5" />
+                  Full Thesis (Link)
+                </a>
+              </Button>
+            </div>
 
-  <div className="flex flex-col gap-2 md:items-end md:self-start">
-    <Badge variant="secondary" className="w-fit">
-      December 2025
-    </Badge>
-    <Badge variant="secondary" className="w-fit">
-      Thesis grade 5 / 5
-    </Badge>
-  </div>
-</div>
-
-
-
-        <div className="space-y-4">
-          <div>
-            <h4 className="text-foreground font-medium mb-1">Foley sounds in indie games</h4>
-            <p className="text-sm text-muted-foreground">
-              Developing an Analyzing Tool to Identify Foley Requirements in Game Sound Design
-              </p>
-              </div>
-          
-
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="abstract" className="border-border">
-              <AccordionTrigger className="text-sm text-muted-foreground hover:text-foreground">
-                <span className="flex items-center gap-2">
-                  <FileText className="w-4 h-4" />
-                  View Abstract
-                </span>
-              </AccordionTrigger>
-              <AccordionContent>
-                <div className="bg-muted/30 border border-border rounded-md p-4 mt-2">
-                  <p className="text-sm text-foreground/90 leading-relaxed italic">
-                    {"Foley sounds have long been established in radio and films, where it eventually evolved into the videogame\naudio production. Practical guidelines and guidance for Foley sound production requirements in indie game\nstudio settings remain fragmented, consisting mostly of interviews and blogs.\nTo identify the Foley sound production requirements for indie game studio, an analyzing tool was developed to assess whether bespoke Foley sounds was feasible for a given game project or whether sound libraries and asset banks should be prioritized. The research for the development of the analyzing tool included theoretical background from Foley sound production in academic papers, as well as three indie case\nstudies (Unpacking, Untitled Goose Game and Exsanguination). Findings from case studies focused on various levels of Foley production planning, recording conditions, tooling and production constraints. Additionally, the theoretical background represented Foley as any recorded audio, created by interacting with\nprops, for the purpose of the proposed media content.\nThe analyzing tool consisted of ten categories and point-based threshold system, giving four different recommendations: No Foley, Minimal Foley, Partial Foley or Full Foley. The results of analyzing tool implementation on the case studies reflected the findings, in midst of the fact that Foley production was best treated\nas scoped production choice rather than all-or-nothing approach. Ultimately, the feasibility depended\nmostly on the game design, available skills, recording conditions and schedule."}
-                  </p>
+            {/* Right: thesis badges stacked */}
+            <div className="flex flex-col gap-2 md:items-end">
+              <Badge variant="secondary" className="w-fit">
+                December 2025
+              </Badge>
+              <Badge variant="secondary" className="w-fit">
+                Thesis grade 5 / 5
+              </Badge>
+            </div>
           </div>
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
-  </div>
-</section>
+
+          <div className="mt-5 space-y-4">
+            <div>
+              <h4 className="text-foreground font-medium mb-1">Foley sounds in indie games</h4>
+              <p className="text-sm text-muted-foreground">
+                Developing an Analyzing Tool to Identify Foley Requirements in Game Sound Design
+              </p>
+            </div>
+
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="abstract" className="border-border">
+                <AccordionTrigger className="text-sm text-muted-foreground hover:text-foreground">
+                  <span className="flex items-center gap-2">
+                    <FileText className="w-4 h-4" />
+                    View Abstract
+                  </span>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="bg-muted/30 border border-border rounded-md p-4 mt-2">
+                    <p className="text-sm text-foreground/90 leading-relaxed italic whitespace-pre-line">
+                      {
+                        "Foley sounds have long been established in radio and films, where it eventually evolved into the videogame\naudio production. Practical guidelines and guidance for Foley sound production requirements in indie game\nstudio settings remain fragmented, consisting mostly of interviews and blogs.\nTo identify the Foley sound production requirements for indie game studio, an analyzing tool was developed to assess whether bespoke Foley sounds was feasible for a given game project or whether sound libraries and asset banks should be prioritized. The research for the development of the analyzing tool included theoretical background from Foley sound production in academic papers, as well as three indie case\nstudies (Unpacking, Untitled Goose Game and Exsanguination). Findings from case studies focused on various levels of Foley production planning, recording conditions, tooling and production constraints. Additionally, the theoretical background represented Foley as any recorded audio, created by interacting with\nprops, for the purpose of the proposed media content.\nThe analyzing tool consisted of ten categories and point-based threshold system, giving four different recommendations: No Foley, Minimal Foley, Partial Foley or Full Foley. The results of analyzing tool implementation on the case studies reflected the findings, in midst of the fact that Foley production was best treated\nas scoped production choice rather than all-or-nothing approach. Ultimately, the feasibility depended\nmostly on the game design, available skills, recording conditions and schedule."
+                      }
+                    </p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }

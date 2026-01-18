@@ -31,11 +31,22 @@ const videoGames = [
         url: "https://store.steampowered.com/app/3286090/Exsanguination/",
         type: "steam" as const,
       },
-      {
-        label: "Practical Training Report (PDF)",
-        url: "https://blobs.vusercontent.net/blob/Ab0136_TC_Portfolio_pdf-K9zj1g5X2K9X0hn2Ht49WSwVubYJGB.pdf",
-        type: "pdf" as const,
-      },
+     {
+  label: "Practical Training Report (PDF)",
+  url: "/pdf/Exsanguination_documentation.pdf",
+  type: "pdf" as const,
+},
+{
+  label: "Game Design Document (GDD)",
+  url: "/pdf/Exsanguination_GDD.pdf",
+  type: "pdf" as const,
+},
+{
+  label: "Audio Design Document (ADD)",
+  url: "/pdf/Exsanguination_ADD.pdf",
+  type: "pdf" as const,
+},
+
     ],
     details: `Exsanguination focuses on high-speed, reflex-based melee combat. Players use movement, dashing, sliding, grappling, and a timed combo-based sword system to fight through rooms filled with enemies, traps, and traversal challenges.
 
@@ -69,10 +80,10 @@ roles: [
     links: [
       { label: "Steam Page (Link)", url: "https://store.steampowered.com/app/2672520/Versebound/", type: "steam" as const },
       {
-        label: "Practical Training Report (PDF)",
-        url: "https://blobs.vusercontent.net/blob/ab0136_practicaltraining_report_coniferdigital-Uqm6DOcqbLuPaUhw4boBbA0XuAu7QP.pdf",
-        type: "pdf" as const,
-      },
+  label: "Practical Training Report (PDF)",
+  url: "/pdf/ab0136_practicaltraining_report_coniferdigital.pdf",
+  type: "pdf" as const,
+},
        {
     label: "Game Testing Questionnaire (PDF)",
     url: "/portfolio/Versebound_ab0136_GameTesting_Questionnaire.pdf",

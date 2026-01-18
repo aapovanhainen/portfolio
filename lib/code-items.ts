@@ -19,7 +19,7 @@ export const codeItems: CodeItem[] = [
     id: "a-star-enemy-ai",
     title: "A* Pathfinding with State-Based Enemy AI",
     subtitle: "Custom waypoint-based A* navigation with collider-aware runtime waypoint generation (stairs/overhang handling), plus a 4-state enemy AI that investigates sounds, tracks last seen position, and repositions to find a clear shot using gun-position raycasts.",
-    tags: ["Unity", "C#", "A*"],
+    tags: ["Unity", "C#", "A* pathing", "Enemy AI"],
     language: "csharp",   
    code: `using System.Collections.Generic;
 using System.Collections;
