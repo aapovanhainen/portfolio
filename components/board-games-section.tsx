@@ -28,7 +28,7 @@ Arrywal PvP showcases deep systems design, asymmetry, emergent gameplay, and hig
   },
   {
     title: "Arrywal (PvPvE)",
-    subtitle: "1 to 3-player quest-driven progression with PvE bosses and competitive PvP",
+    subtitle: "3-player quest-driven progression with PvE bosses and competitive PvP",
     year: "2022",
     image: "arrywal-pvpve.png",
     roles: ["Design", "Systems Design", "Balance", "QA"],
