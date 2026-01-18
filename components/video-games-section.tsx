@@ -33,17 +33,17 @@ const videoGames = [
       },
      {
   label: "Practical Training Report (PDF)",
-  url: "/Exsanguination_documentation.pdf",
+  url: "/portfolio/Exsanguination_documentation.pdf",
   type: "pdf" as const,
 },
 {
   label: "Game Design Document (GDD)",
-  url: "/Exsanguination_GDD.pdf",
+  url: "/portfolio/Exsanguination_GDD.pdf",
   type: "pdf" as const,
 },
 {
   label: "Audio Design Document (ADD)",
-  url: "/Exsanguination_ADD.pdf",
+  url: "/portfolio/Exsanguination_ADD.pdf",
   type: "pdf" as const,
 },
 
@@ -81,12 +81,12 @@ roles: [
       { label: "Steam Page (Link)", url: "https://store.steampowered.com/app/2672520/Versebound/", type: "steam" as const },
       {
   label: "Practical Training Report (PDF)",
-  url: "/ab0136_practicaltraining_report_coniferdigital.pdf",
+  url: "/portfolio/ab0136_practicaltraining_report_coniferdigital.pdf",
   type: "pdf" as const,
 },
        {
     label: "Game Testing Questionnaire (PDF)",
-    url: "/Versebound_ab0136_GameTesting_Questionnaire.pdf",
+    url: "/portfolio/Versebound_ab0136_GameTesting_Questionnaire.pdf",
     type: "pdf" as const,
   },
     ],
@@ -161,7 +161,7 @@ roles: [
     links: [{ label: "Gangster Pūkeko Games Website", url: "https://www.gangsterpukeko.com", type: "website" as const },
  {
     label: "Practical Training Report (PDF)",
-    url: "/gangsterpukeko_practicaltraining_report.pdf",
+    url: "/portfolio/gangsterpukeko_practicaltraining_report.pdf",
     type: "pdf" as const,
   },
     
