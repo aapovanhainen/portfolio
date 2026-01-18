@@ -33,17 +33,17 @@ const videoGames = [
       },
      {
   label: "Practical Training Report (PDF)",
-  url: "/pdf/Exsanguination_documentation.pdf",
+  url: "/Exsanguination_documentation.pdf",
   type: "pdf" as const,
 },
 {
   label: "Game Design Document (GDD)",
-  url: "/pdf/Exsanguination_GDD.pdf",
+  url: "/Exsanguination_GDD.pdf",
   type: "pdf" as const,
 },
 {
   label: "Audio Design Document (ADD)",
-  url: "/pdf/Exsanguination_ADD.pdf",
+  url: "/Exsanguination_ADD.pdf",
   type: "pdf" as const,
 },
 
@@ -81,12 +81,12 @@ roles: [
       { label: "Steam Page (Link)", url: "https://store.steampowered.com/app/2672520/Versebound/", type: "steam" as const },
       {
   label: "Practical Training Report (PDF)",
-  url: "/pdf/ab0136_practicaltraining_report_coniferdigital.pdf",
+  url: "/ab0136_practicaltraining_report_coniferdigital.pdf",
   type: "pdf" as const,
 },
        {
     label: "Game Testing Questionnaire (PDF)",
-    url: "/portfolio/Versebound_ab0136_GameTesting_Questionnaire.pdf",
+    url: "/Versebound_ab0136_GameTesting_Questionnaire.pdf",
     type: "pdf" as const,
   },
     ],
@@ -158,7 +158,15 @@ roles: [
   "Programming",
   "Implementation",
 ],
-    links: [{ label: "Gangster Pūkeko Games Website", url: "https://www.gangsterpukeko.com", type: "website" as const }],
+    links: [{ label: "Gangster Pūkeko Games Website", url: "https://www.gangsterpukeko.com", type: "website" as const },
+ {
+    label: "Practical Training Report (PDF)",
+    url: "/gangsterpukeko_practicaltraining_report.pdf",
+    type: "pdf" as const,
+  },
+    
+    ],
+    
     details: `Neverance is an in-development mobile game centered around grid-based exploration where players uncover items and enemies in patterned sequences, transitioning into turn-based combat encounters. Narrative progression is delivered through story-driven dialogue sequences integrated directly into gameplay.
 
 My contributions:
