@@ -174,17 +174,22 @@ export function VideoGamesSection() {
   return (
     <section id="video-games" className="scroll-mt-20">
       <div className="mb-8">
-  <div className="flex items-center gap-3">
-    <Gamepad2 className="w-6 h-6 text-primary" />
-    <h2 className="text-2xl font-bold text-foreground">Video Games</h2>
-  </div>
+        <div className="flex items-center gap-3">
+          <Gamepad2 className="w-6 h-6 text-primary" />
+          <h2 className="text-2xl font-bold text-foreground">Video Games</h2>
+        </div>
 
-  <p className="mt-3 text-muted-foreground max-w-3xl">
-    Commercial releases, professional training projects, and game jam titles developed in Unity.
-    Includes shipped Steam games, industry collaborations, and smaller personal projects.
-  </p>
-</div>
+        <p className="mt-3 text-muted-foreground max-w-3xl">
+          Commercial releases, professional training projects, and game jam titles developed in Unity.
+          Includes shipped Steam games, industry collaborations, and smaller personal projects.
+        </p>
+      </div>
 
+      <div className="space-y-4">
+        {videoGames.map((game) => (
+          <GameCard key={game.title} {...game} />
+        ))}
+      </div>
     </section>
   )
 }
