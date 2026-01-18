@@ -7,7 +7,7 @@ export function CodeSection() {
       <div className="space-y-2">
         <h2 className="text-2xl font-semibold tracking-tight">Code</h2>
         <p className="text-sm text-muted-foreground">
-          Game systems, gameplay scripts, and tools. Expand each entry to read the code.
+          Game systems, gameplay scripts, and tools.
         </p>
       </div>
 

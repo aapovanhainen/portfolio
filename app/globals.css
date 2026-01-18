@@ -37,6 +37,8 @@
   --role-audio: oklch(0.7 0.15 300);
   --role-programmer: oklch(0.7 0.15 145);
   --role-level: oklch(0.7 0.15 60);
+  --role-qa: oklch(0.7 0.10 230);             
+  --role-implementation: oklch(0.7 0.14 160); 
 }
 
 .dark {

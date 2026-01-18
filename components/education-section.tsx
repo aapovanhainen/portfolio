@@ -1,6 +1,8 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
 import { GraduationCap, BookOpen, FileText } from "lucide-react"
+import { ExternalLink } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 const courseCategories = [
   {
@@ -333,8 +335,7 @@ export function EducationSection() {
       </div>
 
       <p className="text-muted-foreground mb-8 max-w-3xl">
-        My degree combined hands-on game development with production, business, and research skills. I built AI systems,
-        shipped games, and learned to work effectively in multidisciplinary teams with real clients and deadlines.
+        My degree combined hands-on game development with production, programming, game engines, software development, research, language and communication skills, business and to work effectively in multidisciplinary teams with real clients and deadlines.
       </p>
 
       <div className="bg-card border border-border rounded-lg p-6">
@@ -346,6 +347,11 @@ export function EducationSection() {
           <Badge variant="secondary" className="w-fit">
             Graduated December 2025
           </Badge>
+          <p>
+          <Badge variant="secondary" className="w-fit">
+            GPA 4.51 / 5
+          </Badge>
+          </p>
         </div>
 
         <Accordion type="single" collapsible className="w-full">
@@ -425,6 +431,16 @@ export function EducationSection() {
         <div className="flex items-center gap-3 mb-4">
           <BookOpen className="w-5 h-5 text-primary" />
           <h3 className="text-lg font-semibold text-foreground">Bachelor's Thesis</h3>
+          <p>
+          <Badge variant="secondary" className="w-fit">
+            December 2025
+          </Badge>
+          </p>
+                     <p>
+          <Badge variant="secondary" className="w-fit">
+            Thesis grade 5 / 5
+          </Badge>
+          </p>
         </div>
 
         <div className="space-y-4">
@@ -433,18 +449,20 @@ export function EducationSection() {
             <p className="text-sm text-muted-foreground">
               Developing an Analyzing Tool to Identify Foley Requirements in Game Sound Design
               </p>
-              <p>
+              </div>
 
-<a
-  href="https://www.theseus.fi/handle/10024/908930"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="ml-2 text-primary underline underline-offset-2 hover:text-primary/80"
->
-  Link to Bachelor’s Thesis
-</a>
-            </p>
-               </div>
+<div className="mt-2">
+  <Button variant="outline" size="sm" asChild className="text-xs bg-transparent">
+    <a
+      href="https://www.theseus.fi/handle/10024/908930"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <ExternalLink className="w-3 h-3 mr-1.5" />
+      Bachelor’s Thesis (Link)
+    </a>
+  </Button>
+</div>
           
 
           <Accordion type="single" collapsible className="w-full">

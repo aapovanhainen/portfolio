@@ -1,7 +1,10 @@
+"use client"
+
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, FileText, Globe } from "lucide-react"
+import * as React from "react"
 
 interface GameLink {
   label: string
@@ -14,6 +17,7 @@ interface GameCardProps {
   subtitle: string
   year: string
   studio?: string
+  workdescription?: string
   image: string
   roles: string[]
   details: string
@@ -28,7 +32,13 @@ const roleColors: Record<string, string> = {
   // Design related
   "Game Design": "bg-[var(--role-designer)]/20 text-[var(--role-designer)] border-[var(--role-designer)]/30",
   Design: "bg-[var(--role-designer)]/20 text-[var(--role-designer)] border-[var(--role-designer)]/30",
+  "Systems Design": "bg-[var(--role-designer)]/20 text-[var(--role-designer)] border-[var(--role-designer)]/30",
+  "Economy Design": "bg-[var(--role-designer)]/20 text-[var(--role-designer)] border-[var(--role-designer)]/30",
+  "Combat Design": "bg-[var(--role-designer)]/20 text-[var(--role-designer)] border-[var(--role-designer)]/30",
   Balance: "bg-[var(--role-designer)]/20 text-[var(--role-designer)] border-[var(--role-designer)]/30",
+
+  // Level Design (yellow)
+  "Level Design": "bg-[var(--role-level)]/20 text-[var(--role-level)] border-[var(--role-level)]/30",
 
   // Audio related (all purple)
   "Audio Design": "bg-[var(--role-audio)]/20 text-[var(--role-audio)] border-[var(--role-audio)]/30",
@@ -43,16 +53,22 @@ const roleColors: Record<string, string> = {
   "Combat System": "bg-[var(--role-programmer)]/20 text-[var(--role-programmer)] border-[var(--role-programmer)]/30",
   "Enemy AI": "bg-[var(--role-programmer)]/20 text-[var(--role-programmer)] border-[var(--role-programmer)]/30",
   "Ragdoll System": "bg-[var(--role-programmer)]/20 text-[var(--role-programmer)] border-[var(--role-programmer)]/30",
-  Implementation: "bg-[var(--role-programmer)]/20 text-[var(--role-programmer)] border-[var(--role-programmer)]/30",
 
-  // Level Design (yellow)
-  "Level Design": "bg-[var(--role-level)]/20 text-[var(--role-level)] border-[var(--role-level)]/30",
+    // Neutral / misc
+  Documentation: "bg-secondary text-secondary-foreground border-border",
+  Mentoring: "bg-secondary text-secondary-foreground border-border",
+  Marketing: "bg-secondary text-secondary-foreground border-border",
 
-  // QA
-  QA: "bg-secondary text-secondary-foreground border-border",
+  //QA
+ QA: "bg-[var(--role-qa)]/20 text-[var(--role-qa)] border-[var(--role-qa)]/30",
+
+ //Implementation
+ Implementation:
+  "bg-[var(--role-implementation)]/20 text-[var(--role-implementation)] border-[var(--role-implementation)]/30",
 }
 
-export function GameCard({ title, subtitle, year, studio, image, roles, details, links }: GameCardProps) {
+export function GameCard({ title, subtitle, year, studio, workdescription, image, roles, details, links }: GameCardProps) {
+    const [openItem, setOpenItem] = React.useState<string>("")
   return (
     <div className="bg-card border border-border rounded-lg overflow-hidden">
       <div className="flex flex-col md:flex-row">
@@ -66,7 +82,8 @@ export function GameCard({ title, subtitle, year, studio, image, roles, details,
               <h3 className="text-lg font-semibold text-foreground">{title}</h3>
               <p className="text-sm text-muted-foreground">
                 {studio && <span>{studio} • </span>}
-                {year}
+                <span> {year} </span>
+                {workdescription && <span> • {workdescription} </span>}
               </p>
             </div>
           </div>
@@ -104,16 +121,22 @@ export function GameCard({ title, subtitle, year, studio, image, roles, details,
             </div>
           )}
 
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="details" className="border-border">
-              <AccordionTrigger className="text-sm text-muted-foreground hover:text-foreground py-2">
-                Read more
-              </AccordionTrigger>
-              <AccordionContent>
-                <div className="text-foreground/90 text-sm leading-relaxed whitespace-pre-line pt-2">{details}</div>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+          <Accordion
+  type="single"
+  collapsible
+  className="w-full"
+  value={openItem}
+  onValueChange={setOpenItem}
+>
+  <AccordionItem value="details" className="border-border">
+    <AccordionTrigger className="text-sm text-muted-foreground hover:text-foreground py-2">
+      {openItem === "details" ? "Hide details" : "View details"}
+    </AccordionTrigger>
+    <AccordionContent>
+      <div className="text-foreground/90 text-sm leading-relaxed whitespace-pre-line pt-2">{details}</div>
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
         </div>
       </div>
     </div>
