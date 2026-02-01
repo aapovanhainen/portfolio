@@ -13,7 +13,6 @@ const videoGames = [
   "Producer",
   "Publishing",
   "Game Design",
-  "Level Design",
   "Audio Design",
   "Audio Production",
   "Foley Sound Production",
@@ -102,7 +101,7 @@ My contributions:
 • Designed a structured playtesting questionnaire used for external testing`,
   },
   {
-    title: "Incursion",
+    title: "The Incursion",
     subtitle: "First-person horror puzzle game (Unity)",
     year: "2024",
     studio: "Personal project",
@@ -114,7 +113,10 @@ roles: [
   "Enemy AI",
   "Implementation",
 ],
-    details: `Incursion is a first-person horror puzzle game developed during a self-directed two-day game jam in Unity with one collaborator. The player must defeat and evade enemies using the correct tools, with enemy weaknesses, detection methods, and potion effects randomized each run, forcing observation and experimentation rather than memorization.
+links: [
+      { label: "Itch io (Link)", url: "https://https://koirenkoppi.itch.io/incursion", type: "itchio" as const },
+],
+    details: `The Incursion is a first-person horror puzzle game developed during a self-directed two-day game jam in Unity with one collaborator. The player must defeat and evade enemies using the correct tools, with enemy weaknesses, detection methods, and potion effects randomized each run, forcing observation and experimentation rather than memorization.
 
 My contributions:
 • Designed the full playable level

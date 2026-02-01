@@ -9,7 +9,7 @@ import * as React from "react"
 interface GameLink {
   label: string
   url: string
-  type: "steam" | "pdf" | "website"
+  type: "steam" | "pdf" | "website" | "itchio"
 }
 
 interface GameCardProps {
