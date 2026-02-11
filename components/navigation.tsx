@@ -7,6 +7,7 @@ const navItems = [
   { label: "Education", href: "#education" },
   { label: "Code", href: "#code" },
 { label: "Audio", href: "#audio" },
+{ label: "Design", href: "#design" },
   { label: "Video Games", href: "#video-games" },
   { label: "Board Games", href: "#board-games" },
 ]

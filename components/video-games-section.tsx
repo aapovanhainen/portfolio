@@ -114,7 +114,7 @@ roles: [
   "Implementation",
 ],
 links: [
-      { label: "Itch io (Link)", url: "https://https://koirenkoppi.itch.io/incursion", type: "itchio" as const },
+      { label: "Itch io (Link)", url: "https://koirenkoppi.itch.io/incursion", type: "itchio" as const },
 ],
     details: `The Incursion is a first-person horror puzzle game developed during a self-directed two-day game jam in Unity with one collaborator. The player must defeat and evade enemies using the correct tools, with enemy weaknesses, detection methods, and potion effects randomized each run, forcing observation and experimentation rather than memorization.
 
@@ -136,6 +136,9 @@ roles: [
   "Programming",
   "Enemy AI",
   "Implementation",
+],
+links: [
+      { label: "Itch io (Link)", url: "https://koirenkoppi.itch.io/lehtinpuhallinmies-helvetissa", type: "itchio" as const },
 ],
     details: `Lehtipuhallinmies Helvetissä is a comedic first-person action game developed during a self-directed two-day game jam by a two-person core team and a support person for music. The player cleans Hell by blowing large amounts of leaves into lava while avoiding demons that patrol, chase, and search the level. As leaves are cleared, the player unlocks increasingly powerful abilities that enhance movement and the leaf blower.
 
