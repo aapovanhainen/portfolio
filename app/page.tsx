@@ -2,6 +2,7 @@ import { AboutSection } from "@/components/about-section"
 import { EducationSection } from "@/components/education-section"
 import { CodeSection } from "@/components/CodeSection"
 import { AudioSection } from "@/components/AudioSection"
+import { DesignSection } from "@/components/DesignSection"
 import { VideoGamesSection } from "@/components/video-games-section"
 import { BoardGamesSection } from "@/components/board-games-section"
 import { Navigation } from "@/components/navigation"
@@ -15,6 +16,7 @@ export default function Home() {
         <EducationSection />
         <CodeSection />
         <AudioSection />
+        <DesignSection />
         <VideoGamesSection />
         <BoardGamesSection />
       </main>

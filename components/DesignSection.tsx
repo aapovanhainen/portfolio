@@ -25,7 +25,7 @@ export function DesignSection() {
             rel="noopener noreferrer"
           >
             <FileText className="w-3 h-3 mr-1.5" />
-            Audio CV (PDF)
+            Design CV (PDF)
           </a>
         </Button>
       </div>
