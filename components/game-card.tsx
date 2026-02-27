@@ -87,15 +87,16 @@ export function GameCard({ title, subtitle, year, studio, workdescription, image
 
   return (
     <article className="bg-card border border-border rounded-lg overflow-hidden">
-      {/* Wide image on top */}
-      <div className="w-full aspect-video bg-muted">
-        <img
-          src={image || "/placeholder.svg"}
-          alt={title}
-          className="w-full h-full object-cover"
-          loading="lazy"
-        />
-      </div>
+<div className="w-full flex justify-center bg-muted py-4">
+<div className="w-full md:w-64 h-40 md:h-auto shrink-0">
+      <img
+      src={image || "/placeholder.svg"}
+      alt={title}
+      className="w-full h-full object-cover rounded-md"
+      loading="lazy"
+    />
+  </div>
+</div>
 
       <div className="p-5">
         {/* Title + meta */}
