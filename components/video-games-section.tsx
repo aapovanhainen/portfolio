@@ -55,7 +55,7 @@ const videoGames = [
 • Steam release: store page setup and build management in Steamworks
 • Combat & movement: attacks, combos, parry mechanics, and movement abilities (Unity)
 • Enemies & encounters: designed and implemented two enemy types, combat encounters, and tutorial flow
-• Documentation: wrote and maintained the Game Design Document (GDD) and Audio Design Document (ADD)
+• Documentation: wrote and maintained the Game Design Document and Audio Design Document
 • Audio: Foley recording, sound effect production, audio editing, and in-engine implementation
 • Music: dynamic state-based transitions for music
 • Mentoring: guided a junior programmer on gameplay systems and Unity implementation`,
@@ -91,11 +91,11 @@ const videoGames = [
       },
     ],
     details: `My contributions:
-• Balance: tuned characters, enemies, abilities, progression, pacing, and difficulty through iteration and playtesting
+• Balance: characters, enemies, abilities, progression, pacing, and difficulty through iteration and playtesting
 • QA: coordinated testing scenarios, tracked issues across builds, and validated fixes
 • Implementation: implemented gameplay features and system logic in Unity
 • Audio: produced and implemented sound effects, including a dynamic environmental audio system
-• Documentation: maintained balance/QA notes and structured testing materials (questionnaire)
+• Documentation: maintained balance/QA notes and structured testing sessions with questionnoaires
 • Marketing support: assisted with influencer outreach and preparation`,
   },
   {
@@ -135,9 +135,8 @@ const videoGames = [
     ],
     details: `My contributions:
 • Level design: multi-section level with escalation and hidden routes, including enemy spawn and patrol points
-• AI: designed and implemented two enemy types; patrol/chase/lost-sight behaviors
-• Gameplay: implemented ragdoll mechanics for enemies
-• Audio: contributed to audio and vocal work`,
+• AI: designed and implemented two enemy types; patrol/chase/lost-sight behaviors and ragdoll mechanics
+• Audio: contributed to audio and music vocal work`,
   },
   {
     title: "Neverance",
@@ -160,9 +159,8 @@ const videoGames = [
       },
     ],
     details: `My contributions:
-• Dialogue: implemented an Ink-based dialogue system with typewriter effect
+• Implemented an Ink-based dialogue system with typewriter effect with per-character typewriter audio triggering
 • FMOD: created the FMOD project setup and AudioManager (SFX/music VCAs, UI SFX, exploration audio)
-• Systems: implemented per-character typewriter audio triggering with rate limiting and rich-text–safe rendering
 • Audio feedback: designed a dynamic “sweetness” system using FMOD global parameters
 • Documentation: produced clear technical documentation for future development`,
   },
