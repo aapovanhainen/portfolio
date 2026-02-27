@@ -10,55 +10,55 @@ const videoGames = [
     workdescription: "Product Lab (Steam release): 675 hours",
     image: "/portfolio/exsanguination.jpg",
     roles: [
-  "Producer",
-  "Publishing",
-  "Game Design",
-  "Audio Design",
-  "Audio Production",
-  "Foley Sound Production",
-  "Audio Editing",
-  "Programming",
-  "Combat System",
-  "Enemy AI",
-  "Implementation",
-  "Mentoring",
-],
-
+      "Producer",
+      "Publishing",
+      "Game Design",
+      "Audio Design",
+      "Audio Production",
+      "Foley Sound Production",
+      "Audio Editing",
+      "Programming",
+      "Combat System",
+      "Enemy AI",
+      "Implementation",
+      "Mentoring",
+    ],
     links: [
       {
         label: "Steam Page (Link)",
         url: "https://store.steampowered.com/app/3286090/Exsanguination/",
         type: "steam" as const,
       },
-     {
-  label: "Practical Training Report (PDF)",
-  url: "/portfolio/Exsanguination_documentation.pdf",
-  type: "pdf" as const,
-},
-{
-  label: "Game Design Document (GDD)",
-  url: "/portfolio/Exsanguination_GDD.pdf",
-  type: "pdf" as const,
-},
-{
-  label: "Audio Design Document (ADD)",
-  url: "/portfolio/Exsanguination_ADD.pdf",
-  type: "pdf" as const,
-},
-
+      {
+        label: "Practical Training Report (PDF)",
+        url: "/portfolio/Exsanguination_documentation.pdf",
+        type: "pdf" as const,
+      },
+      {
+        label: "Game Design Document (GDD)",
+        url: "/portfolio/Exsanguination_GDD.pdf",
+        type: "pdf" as const,
+      },
+      {
+        label: "Audio Design Document (ADD)",
+        url: "/portfolio/Exsanguination_ADD.pdf",
+        type: "pdf" as const,
+      },
+      {
+        label: "Sound Effects (YouTube)",
+        url: "https://youtu.be/Fpvl1oyYrO0",
+        type: "website" as const,
+      },
     ],
-    details: `Exsanguination focuses on high-speed, reflex-based melee combat. Players use movement, dashing, sliding, grappling, and a timed combo-based sword system to fight through rooms filled with enemies, traps, and traversal challenges.
-
-Culminating in a multi-phase boss fight, the game is designed as a short but intense experience where mastery of mechanics is rewarded through speed, efficiency, and execution.
-
-My contributions:
-• As Producer, coordinated task planning, adjusted scope under tight deadlines
-• Steam release, including the store page and build management in Steamworks,
-• Designed and implemented two enemy types
-• Recording and editing custom Foley & asset sound effects
-• Dynamic state-based transitions for music
-• Player movement and combat systems with combo features
-• Mentored a junior programmer`
+    details: `My contributions:
+• Producer: task planning and coordination; scope and milestone tracking
+• Steam release: store page setup and build management in Steamworks
+• Combat & movement: attacks, combos, parry mechanics, and movement abilities (Unity)
+• Enemies & encounters: designed and implemented two enemy types, combat encounters, and tutorial flow
+• Documentation: wrote and maintained the Game Design Document (GDD) and Audio Design Document (ADD)
+• Audio: Foley recording, sound effect production, audio editing, and in-engine implementation
+• Music: dynamic state-based transitions for music
+• Mentoring: guided a junior programmer on gameplay systems and Unity implementation`,
   },
   {
     title: "Versebound",
@@ -67,38 +67,36 @@ My contributions:
     studio: "Conifer Digital",
     workdescription: "Practical Training: 463 hours",
     image: "/portfolio/versebound.jpg",
-roles: [
-  "Balance",
-  "QA",
-  "Programming",
-  "Implementation",
-  "Audio Production",
-  "Audio Editing", 
-  "Marketing",
-],
+    roles: ["Balance", "QA", "Programming", "Implementation", "Audio Production", "Audio Editing", "Marketing"],
     links: [
-      { label: "Steam Page (Link)", url: "https://store.steampowered.com/app/2672520/Versebound/", type: "steam" as const },
       {
-  label: "Practical Training Report (PDF)",
-  url: "/portfolio/ab0136_practicaltraining_report_coniferdigital.pdf",
-  type: "pdf" as const,
-},
-       {
-    label: "Game Testing Questionnaire (PDF)",
-    url: "/portfolio/Versebound_ab0136_GameTesting_Questionnaire.pdf",
-    type: "pdf" as const,
-  },
+        label: "Steam Page (Link)",
+        url: "https://store.steampowered.com/app/2672520/Versebound/",
+        type: "steam" as const,
+      },
+      {
+        label: "Practical Training Report (PDF)",
+        url: "/portfolio/ab0136_practicaltraining_report_coniferdigital.pdf",
+        type: "pdf" as const,
+      },
+      {
+        label: "Game Testing Questionnaire (PDF)",
+        url: "/portfolio/Versebound_ab0136_GameTesting_Questionnaire.pdf",
+        type: "pdf" as const,
+      },
+      {
+        label: "Sound Effects (YouTube)",
+        url: "https://youtu.be/ZPsqmJUq86k",
+        type: "website" as const,
+      },
     ],
-    details: `Versebound is a challenging action roguelike where players fight through enemy waves and bosses in short, repeatable runs, unlocking weapons, artifacts, and characters while performing ritual-based challenges that shape each playthrough.
-
-My contributions:
-• Game balance: all weapons, passives, enemies, bosses, and progression through extensive playtesting and data-driven iteration
-• QA: Created playtest sessions including 20+ students with custom questionnaire
-• Bug fixes and usability improvements
-• Improved UI clarity by redesigning upgrade and stat texts
-• Designed, created and implemented sound effects, including a dynamic environmental audio system
-• Supported influencer outreach and marketing preparation
-• Designed a structured playtesting questionnaire used for external testing`,
+    details: `My contributions:
+• Balance: tuned characters, enemies, abilities, progression, pacing, and difficulty through iteration and playtesting
+• QA: coordinated testing scenarios, tracked issues across builds, and validated fixes
+• Implementation: implemented gameplay features and system logic in Unity
+• Audio: produced and implemented sound effects, including a dynamic environmental audio system
+• Documentation: maintained balance/QA notes and structured testing materials (questionnaire)
+• Marketing support: assisted with influencer outreach and preparation`,
   },
   {
     title: "The Incursion",
@@ -107,21 +105,18 @@ My contributions:
     studio: "Personal project",
     workdescription: "Game Jam project: 2 days",
     image: "/portfolio/incursion.png",
-roles: [
-  "Design",
-  "Level Design",
-  "Enemy AI",
-  "Implementation",
-],
-links: [
-      { label: "Itch io (Link)", url: "https://koirenkoppi.itch.io/incursion", type: "itchio" as const },
-],
-    details: `The Incursion is a first-person horror puzzle game developed during a self-directed two-day game jam in Unity with one collaborator. The player must defeat and evade enemies using the correct tools, with enemy weaknesses, detection methods, and potion effects randomized each run, forcing observation and experimentation rather than memorization.
-
-My contributions:
-• Designed the full playable level
-• Implemented enemies with NavMesh pathing for patrolling and chasing
-• Collaborated on core mechanics with focus on instant-death rules, fair randomization of distinct perception systems (vision, hearing, potion-based reactions), and clear player feedback`,
+    roles: ["Design", "Level Design", "Enemy AI", "Implementation"],
+    links: [
+      {
+        label: "Itch.io (Link)",
+        url: "https://koirenkoppi.itch.io/incursion",
+        type: "website" as const,
+      },
+    ],
+    details: `My contributions:
+• Level design: designed the full playable level with gameplay elements such as item spawns
+• AI: implemented enemies with NavMesh patrolling and chasing
+• Design: collaborated on mechanics with focus on readable feedback and fair randomization`,
   },
   {
     title: "Lehtipuhallinmies Helvetissä",
@@ -130,24 +125,19 @@ My contributions:
     studio: "Personal project",
     workdescription: "Game Jam project: 2 days",
     image: "/portfolio/lehtipuhallin.png",
-roles: [
-  "Design",
-  "Level Design",
-  "Programming",
-  "Enemy AI",
-  "Implementation",
-],
-links: [
-      { label: "Itch io (Link)", url: "https://koirenkoppi.itch.io/lehtinpuhallinmies-helvetissa", type: "itchio" as const },
-],
-    details: `Lehtipuhallinmies Helvetissä is a comedic first-person action game developed during a self-directed two-day game jam by a two-person core team and a support person for music. The player cleans Hell by blowing large amounts of leaves into lava while avoiding demons that patrol, chase, and search the level. As leaves are cleared, the player unlocks increasingly powerful abilities that enhance movement and the leaf blower.
-
-My contributions:
-• Designed a multi-section level with escalating pressure and hidden escape areas
-• Designed and implemented two enemy types
-• Implemented enemy patrol, chase, and loss-of-sight behavior
-• Implemented ragdoll mechanics for enemies
-• Contributed to audio and vocal work`,
+    roles: ["Design", "Level Design", "Programming", "Enemy AI", "Implementation"],
+    links: [
+      {
+        label: "Itch.io (Link)",
+        url: "https://koirenkoppi.itch.io/lehtinpuhallinmies-helvetissa",
+        type: "website" as const,
+      },
+    ],
+    details: `My contributions:
+• Level design: multi-section level with escalation and hidden routes, including enemy spawn and patrol points
+• AI: designed and implemented two enemy types; patrol/chase/lost-sight behaviors
+• Gameplay: implemented ragdoll mechanics for enemies
+• Audio: contributed to audio and vocal work`,
   },
   {
     title: "Neverance",
@@ -156,30 +146,25 @@ My contributions:
     studio: "Gangster Pūkeko Games",
     workdescription: "Practical Training: 351 hours",
     image: "/portfolio/pukeko.png",
-roles: [
-  "Audio Design",
-  "Audio & Systems Integration",
-  "FMOD",
-  "Programming",
-  "Implementation",
-],
-    links: [{ label: "Gangster Pūkeko Games Website", url: "https://www.gangsterpukeko.com", type: "website" as const },
- {
-    label: "Practical Training Report (PDF)",
-    url: "/portfolio/gangsterpukeko_practicaltraining_report.pdf",
-    type: "pdf" as const,
-  },
-    
+    roles: ["Audio Design", "Audio & Systems Integration", "FMOD", "Programming", "Implementation"],
+    links: [
+      {
+        label: "Gangster Pūkeko Games Website",
+        url: "https://www.gangsterpukeko.com",
+        type: "website" as const,
+      },
+      {
+        label: "Practical Training Report (PDF)",
+        url: "/portfolio/gangsterpukeko_practicaltraining_report.pdf",
+        type: "pdf" as const,
+      },
     ],
-    
-    details: `Neverance is an in-development mobile game centered around grid-based exploration where players uncover items and enemies in patterned sequences, transitioning into turn-based combat encounters. Narrative progression is delivered through story-driven dialogue sequences integrated directly into gameplay.
-
-My contributions:
-• Designed and implemented an Ink-based dialogue system with character-by-character typewriter effect integrated with FMOD for synchronized typing sound effects
-• Built reusable systems for adjustable typing speeds via Ink tags, per-character audio triggering with rate limiting, and rich-text–safe dialogue rendering
-• Created FMOD Audio Manager handling global SFX and music volume control via VCAs, UI sound effects, and exploration audio
-• Designed and implemented a dynamic "sweetness" audio feedback system using FMOD global parameters to scale audio intensity based on successful item sequences
-• Produced internal technical documentation covering system setup, architecture, and usage`,
+    details: `My contributions:
+• Dialogue: implemented an Ink-based dialogue system with typewriter effect
+• FMOD: created the FMOD project setup and AudioManager (SFX/music VCAs, UI SFX, exploration audio)
+• Systems: implemented per-character typewriter audio triggering with rate limiting and rich-text–safe rendering
+• Audio feedback: designed a dynamic “sweetness” system using FMOD global parameters
+• Documentation: produced clear technical documentation for future development`,
   },
 ]
 
@@ -193,8 +178,8 @@ export function VideoGamesSection() {
         </div>
 
         <p className="mt-3 text-muted-foreground max-w-3xl">
-          Commercial releases, professional training projects, and game jam titles developed in Unity.
-          Includes shipped Steam games, industry collaborations, and smaller personal projects.
+          Commercial releases, professional training projects, and game jam titles developed in Unity. Includes shipped
+          Steam games, industry collaborations, and smaller personal projects.
         </p>
       </div>
 

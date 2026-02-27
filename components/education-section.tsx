@@ -442,9 +442,20 @@ export function EducationSection() {
               <Button variant="outline" size="sm" asChild className="text-xs bg-transparent">
                 <a href="https://www.theseus.fi/handle/10024/908930" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="w-3 h-3 mr-1.5" />
-                  Full Thesis (Link)
+                  Full Thesis (Theseus Link)
                 </a>
               </Button>
+
+              <Button variant="outline" size="sm" asChild className="text-xs bg-transparent">
+  <a
+    href="https://github.com/aapovanhainen/Foley-Sound-Analyzing-Tool"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <ExternalLink className="w-3 h-3 mr-1.5" />
+    Foley Sound Analyzing Tool (GitHub Link)
+  </a>
+</Button>
             </div>
 
             {/* Right: thesis badges stacked */}
@@ -478,7 +489,7 @@ export function EducationSection() {
                   <div className="bg-muted/30 border border-border rounded-md p-4 mt-2">
                     <p className="text-sm text-foreground/90 leading-relaxed italic whitespace-pre-line">
                       {
-                        "Foley sounds have long been established in radio and films, where it eventually evolved into the videogame\naudio production. Practical guidelines and guidance for Foley sound production requirements in indie game\nstudio settings remain fragmented, consisting mostly of interviews and blogs.\nTo identify the Foley sound production requirements for indie game studio, an analyzing tool was developed to assess whether bespoke Foley sounds was feasible for a given game project or whether sound libraries and asset banks should be prioritized. The research for the development of the analyzing tool included theoretical background from Foley sound production in academic papers, as well as three indie case\nstudies (Unpacking, Untitled Goose Game and Exsanguination). Findings from case studies focused on various levels of Foley production planning, recording conditions, tooling and production constraints. Additionally, the theoretical background represented Foley as any recorded audio, created by interacting with\nprops, for the purpose of the proposed media content.\nThe analyzing tool consisted of ten categories and point-based threshold system, giving four different recommendations: No Foley, Minimal Foley, Partial Foley or Full Foley. The results of analyzing tool implementation on the case studies reflected the findings, in midst of the fact that Foley production was best treated\nas scoped production choice rather than all-or-nothing approach. Ultimately, the feasibility depended\nmostly on the game design, available skills, recording conditions and schedule."
+                        "Foley sounds have long been established in radio and films, where it eventually evolved into the videogame\naudio production. Practical guidelines and guidance for Foley sound production requirements in indie game\nstudio settings remain fragmented, consisting mostly of interviews and blogs.\nTo identify the Foley sound production requirements for indie game studio, an analyzing tool was developed to assess whether bespoke Foley sounds was feasible for a given game project or whether sound libraries and asset banks should be prioritized. The research for the development of the analyzing tool included theoretical background from Foley sound production in academic papers, as well as three indie case\nstudies (Unpacking, Untitled Goose Game and Exsanguination). Findings from case studies focused on various levels of Foley production planning, recording conditions, tooling and production constraints. Additionally, the theoretical background represented Foley as any recorded audio, created by interacting with props, for the purpose of the proposed media content.\nThe analyzing tool consisted of ten categories and point-based threshold system, giving four different recommendations: No Foley, Minimal Foley, Partial Foley or Full Foley. The results of analyzing tool implementation on the case studies reflected the findings, in midst of the fact that Foley production was best treated as scoped production choice rather than all-or-nothing approach.\nUltimately, the feasibility depended mostly on the game design, available skills, recording conditions and schedule."
                       }
                     </p>
                   </div>

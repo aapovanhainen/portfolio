@@ -16,7 +16,6 @@ export default function Home() {
         <EducationSection />
         <CodeSection />
         <AudioSection />
-        <DesignSection />
         <VideoGamesSection />
         <BoardGamesSection />
       </main>

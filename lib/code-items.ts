@@ -16,9 +16,213 @@ export type CodeItem = {
 
 export const codeItems: CodeItem[] = [
   {
+  id: "a-star-waypoint",
+  title: "Waypoint Node (Graph Data + A* Costs)",
+  subtitle:
+    "Data model for a waypoint graph node: position, neighbors, and A* bookkeeping (g/h/f costs + parent) used during path searches.",
+  tags: ["Unity", "C#", "AI", "A*", "Waypoints"],
+  code: `using System.Collections.Generic;
+using UnityEngine;
+
+public class Waypoint
+{
+    public Vector3 Position;
+    public List<Waypoint> Neighbors = new List<Waypoint>();
+
+    public float gCost;
+    public float hCost;
+    public float FCost => gCost + hCost;
+    public Waypoint parent;
+
+    public Waypoint(Vector3 position)
+    {
+        Position = position;
+    }
+}`
+},
+{
+  id: "a-star-waypointgenerator",
+  title: "Waypoint Generator (Grid Scan + Connections)",
+  subtitle:
+    "Generates waypoints by scanning a 3D area, validates agent clearance with a capsule check, and connects nearby nodes with raycast line-of-sight so A* can route around obstacles.",
+  tags: ["Unity", "C#", "AI", "A*", "Waypoints", "Physics", "Gizmos"],
+  code: `using System.Collections.Generic;
+using UnityEngine;
+
+public class WaypointGenerator : MonoBehaviour
+{
+    [Header("Waypoint Grid Settings")]
+    [SerializeField] private float gridSpacing = 2f;
+
+    [Header("Layer Settings")]
+    [SerializeField] private LayerMask floorLayer;
+    [SerializeField] private LayerMask obstacleLayer;
+
+    [Header("Waypoint Connection Settings")]
+    [SerializeField] private float maxVerticalDistance = 1.5f;
+
+    [Header("Agent Clearance Settings")]
+    [Tooltip("Small vertical gap above the floor to start the clearance capsule.")]
+    [SerializeField] private float clearanceOffset;
+    [Tooltip("Character height for clearance check (capsule total height).")]
+    [SerializeField] private float capsuleHeight;
+    [Tooltip("Character radius for clearance check (capsule radius).")]
+    [SerializeField] private float capsuleRadius;
+
+    [Header("Scan Area")]
+    [SerializeField] private BoxCollider scanVolume;
+
+    [Header("Debug Output")]
+    public List<Waypoint> waypoints = new List<Waypoint>();
+    [Tooltip("Toggle drawing of waypoint spheres.")]
+    [SerializeField] private bool drawWaypoints = true;
+    [Tooltip("Toggle drawing of connection lines between waypoints.")]
+    [SerializeField] private bool drawConnections = true;
+    [Tooltip("Toggle drawing of clearance capsules.")]
+    [SerializeField] private bool drawClearance = true;
+
+    void Start()
+    {
+        GenerateWaypoints();
+        ConnectWaypoints();
+    }
+
+    private void GenerateWaypoints()
+    {
+        waypoints.Clear();
+        Bounds bounds = CalculateSceneBounds();
+        LayerMask blockerMask = floorLayer | obstacleLayer;
+
+        for (float x = bounds.min.x; x <= bounds.max.x; x += gridSpacing)
+            for (float z = bounds.min.z; z <= bounds.max.z; z += gridSpacing)
+            {
+                Vector3 rayStart = new Vector3(x, bounds.max.y + 5f, z);
+                var hits = Physics.RaycastAll(rayStart, Vector3.down, bounds.size.y + 10f, floorLayer);
+
+                foreach (var hit in hits)
+                {
+                    Vector3 pos = hit.point;
+                    Vector3 normal = hit.normal;
+
+                    Vector3 basePt = pos + normal * (clearanceOffset + capsuleRadius);
+                    Vector3 tipPt = basePt + normal * (capsuleHeight * 0.5f);
+
+                    if (Physics.CheckCapsule(basePt, tipPt, capsuleRadius, blockerMask))
+                        continue;
+
+                    if (!WaypointExistsNear(pos))
+                        waypoints.Add(new Waypoint(pos));
+                }
+            }
+    }
+
+    bool WaypointExistsNear(Vector3 pos)
+    {
+        float thr = gridSpacing * 0.5f;
+        float thrSqr = thr * thr;
+        foreach (var w in waypoints)
+            if ((w.Position - pos).sqrMagnitude < thrSqr)
+                return true;
+        return false;
+    }
+
+    void ConnectWaypoints()
+    {
+        LayerMask blockerMask = obstacleLayer | floorLayer;
+        float connectionRangeSqr = (gridSpacing * 1.5f) * (gridSpacing * 1.5f);
+
+        foreach (var w in waypoints)
+            foreach (var o in waypoints)
+            {
+                if (o == w) continue;
+
+                float dx = w.Position.x - o.Position.x;
+                float dz = w.Position.z - o.Position.z;
+                if (dx * dx + dz * dz > connectionRangeSqr)
+                    continue;
+
+                if (Mathf.Abs(w.Position.y - o.Position.y) > maxVerticalDistance)
+                    continue;
+
+                Vector3 dir = (o.Position - w.Position).normalized;
+                float dist = Vector3.Distance(w.Position, o.Position);
+                Vector3 start = w.Position + Vector3.up * 0.3f;
+                if (Physics.Raycast(start, dir, dist, blockerMask))
+                    continue;
+
+                w.Neighbors.Add(o);
+            }
+    }
+
+    Bounds CalculateSceneBounds()
+    {
+        if (scanVolume == null) return new Bounds(Vector3.zero, Vector3.one);
+
+        Vector3 worldCenter = scanVolume.transform.TransformPoint(scanVolume.center);
+        Vector3 halfExtents = Vector3.Scale(scanVolume.size * 0.5f, scanVolume.transform.lossyScale);
+
+        Collider[] floorCols = Physics.OverlapBox(
+            worldCenter,
+            halfExtents,
+            scanVolume.transform.rotation,
+            floorLayer
+        );
+
+        if (floorCols.Length == 0)
+            return new Bounds(worldCenter, scanVolume.size);
+
+        Bounds b = floorCols[0].bounds;
+        foreach (var c in floorCols)
+            b.Encapsulate(c.bounds);
+
+        return b;
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (waypoints == null) return;
+        Bounds bounds = CalculateSceneBounds();
+        var floorMask = floorLayer;
+
+        foreach (var wp in waypoints)
+        {
+            if (drawWaypoints)
+            {
+                Gizmos.color = Color.cyan;
+                Gizmos.DrawSphere(wp.Position, 0.2f);
+            }
+
+            if (drawClearance)
+            {
+                Vector3 rayOrigin = new Vector3(wp.Position.x, bounds.max.y + 5f, wp.Position.z);
+                float rayDist = bounds.size.y + 10f;
+                if (Physics.Raycast(rayOrigin, Vector3.down, out var hit, rayDist, floorMask))
+                {
+                    Vector3 n = hit.normal;
+                    Vector3 basePt = wp.Position + n * (clearanceOffset + capsuleRadius);
+                    Vector3 tipPt = basePt + n * (capsuleHeight * 0.5f);
+
+                    Gizmos.color = Color.magenta;
+                    Gizmos.DrawLine(basePt, tipPt);
+                    Gizmos.DrawWireSphere(basePt, capsuleRadius);
+                    Gizmos.DrawWireSphere(tipPt, capsuleRadius);
+                }
+            }
+
+            if (drawConnections)
+            {
+                Gizmos.color = Color.white;
+                foreach (var nbor in wp.Neighbors)
+                    Gizmos.DrawLine(wp.Position, nbor.Position);
+            }
+        }
+    }
+}`
+},
+{
     id: "a-star-enemy-ai",
     title: "A* Pathfinding with State-Based Enemy AI",
-    subtitle: "Custom waypoint-based A* navigation with collider-aware runtime waypoint generation (stairs/overhang handling), plus a 4-state enemy AI that investigates sounds, tracks last seen position, and repositions to find a clear shot using gun-position raycasts.",
+    subtitle: "State-driven enemy AI (Idle/Patrol/Investigate/Combat) that uses custom A* pathfinding through a waypoint graph, with vision checks and sound-triggered investigation.",
     tags: ["Unity", "C#", "A* pathing", "Enemy AI"],
     language: "csharp",   
    code: `using System.Collections.Generic;

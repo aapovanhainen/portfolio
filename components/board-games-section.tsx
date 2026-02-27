@@ -39,7 +39,7 @@ The main objective is to reach the center, claim the primary reward, and return 
   {
     title: "Goblin Village",
     subtitle: "3-player competitive resource management and village building",
-    year: "2024",
+    year: "2022",
     image: "goblin-village.png",
     roles: ["Design", "Systems Design", "Economy Design", "Balance", "QA"],
     details: `Goblin Village is a 3-player competitive board game where players manage and expand goblin villages through structured turn phases. Each turn consists of gathering resources, constructing and upgrading buildings, and taking aggressive or defensive actions against opponents.
@@ -63,17 +63,18 @@ Designed with a strong focus on systems-driven gameplay, replayability, procedur
 export function BoardGamesSection() {
   return (
     <section id="board-games" className="scroll-mt-20">
-      <div className="flex items-center gap-3 mb-8">
-        <Dice5 className="w-6 h-6 text-primary" />
-        <h2 className="text-2xl font-bold text-foreground">Board Games</h2>
+      <div className="mb-8">
+        <div className="flex items-center gap-3">
+          <Dice5 className="w-6 h-6 text-primary" />
+          <h2 className="text-2xl font-bold text-foreground">Board Games</h2>
+        </div>
+
+        <p className="mt-3 text-muted-foreground max-w-3xl">
+          Personal passion projects co-created with a close collaborator under the name Sade Co (informal team name,
+          not a registered company). Each game has gone through extensive iteration, balancing passes, and playtests to
+          refine mechanics and player experience.
+        </p>
       </div>
-
-      <p className="text-muted-foreground mb-8 max-w-3xl">
-        Personal passion projects co-created with a close collaborator. 
-        Each game has undergone extensive iteration cycles, systematic balancing passes, and numerous playtest sessions to refine mechanics and player experience. 
-        These designs remain unpublished but represent deep exploration of tabletop game systems.
-
-      </p>
 
       <div className="space-y-4">
         {boardGames.map((game) => (
