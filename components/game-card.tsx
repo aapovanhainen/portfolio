@@ -88,13 +88,13 @@ export function GameCard({ title, subtitle, year, studio, workdescription, image
   return (
     <article className="bg-card border border-border rounded-lg overflow-hidden">
 <div className="w-full flex justify-center bg-muted py-4">
-<div className="w-full md:w-64 h-40 md:h-auto shrink-0">
-      <img
-      src={image || "/placeholder.svg"}
-      alt={title}
-      className="w-full h-full object-cover rounded-md"
-      loading="lazy"
-    />
+<div className="w-full h-48 md:h-56 overflow-hidden">
+        <img
+  src={image || "/placeholder.svg"}
+  alt={title}
+  className="w-full h-full object-cover"
+  loading="lazy"
+/>
   </div>
 </div>
 
