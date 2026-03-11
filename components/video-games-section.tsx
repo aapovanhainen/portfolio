@@ -35,12 +35,12 @@ const videoGames = [
         type: "pdf" as const,
       },
       {
-        label: "Game Design Document (GDD)",
+        label: "Game Design Document (PDF)",
         url: "/portfolio/Exsanguination_GDD.pdf",
         type: "pdf" as const,
       },
       {
-        label: "Audio Design Document (ADD)",
+        label: "Audio Design Document (PDF)",
         url: "/portfolio/Exsanguination_ADD.pdf",
         type: "pdf" as const,
       },
@@ -57,7 +57,7 @@ const videoGames = [
 • Enemies & encounters: designed and implemented two enemy types, combat encounters, and tutorial flow
 • Documentation: wrote and maintained the Game Design Document and Audio Design Document
 • Audio: Foley recording, sound effect production, audio editing, and in-engine implementation
-• Music: dynamic state-based transitions for music
+• Music: dynamic level-based transitions for music
 • Mentoring: guided a junior programmer on gameplay systems and Unity implementation`,
   },
   {
@@ -92,10 +92,10 @@ const videoGames = [
     ],
     details: `My contributions:
 • Balance: characters, enemies, abilities, progression, pacing, and difficulty through iteration and playtesting
-• QA: coordinated testing scenarios, tracked issues across builds, and validated fixes
+• QA: coordinated testing scenarios, tracked issues posted in Discord server and validated fixes
 • Implementation: implemented gameplay features and system logic in Unity
-• Audio: produced and implemented sound effects, including a dynamic environmental audio system
-• Documentation: maintained balance/QA notes and structured testing sessions with questionnoaires
+• Audio: produced and implemented sound effects for weapons, environments, characters, UI and more, as well as a dynamic environmental audio system
+• Documentation: maintained balance notes in multi-sheet Excel
 • Marketing support: assisted with influencer outreach and preparation`,
   },
   {
@@ -140,7 +140,7 @@ const videoGames = [
   },
   {
     title: "Neverance",
-    subtitle: "Solar-punk themed mobile game with turn-based combat (Unity)",
+    subtitle: "Solar-punk themed mobile game with exploration and turn-based combat (Unity)",
     year: "In Development",
     studio: "Gangster Pūkeko Games",
     workdescription: "Practical Training: 351 hours",
@@ -160,8 +160,8 @@ const videoGames = [
     ],
     details: `My contributions:
 • Implemented an Ink-based dialogue system with typewriter effect with per-character typewriter audio triggering
-• FMOD: created the FMOD project setup and AudioManager (SFX/music VCAs, UI SFX, exploration audio)
-• Audio feedback: designed a dynamic “sweetness” system using FMOD global parameters
+• Created the FMOD project setup and AudioManager (SFX/music VCAs, UI SFX, exploration audio)
+• Designed a dynamic “sweetness” system using FMOD global parameters
 • Documentation: produced clear technical documentation for future development`,
   },
 ]
